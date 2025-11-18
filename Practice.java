@@ -2,57 +2,57 @@ import java.util.Scanner;
 public class Practice{
     public static void main(String  args[]){
 
-//duplicate value.
+duplicate value.
 
-// int arr[] = {3,5,3,5,7,3,4,6,2,4,4,4};
-// for(int i=0;i<arr.length-1;++i){
-// boolean dup=false;
-// int count=1;
-// for(int j=i+1; j<arr.length;++j)
-// {
-//     if(arr[i]==arr[j] && arr[i]!=-1)
-//     {
-//         ++count;
-//         arr[j]=-1;
-//         dup=true;
-//     }
-// }
-// if(dup && arr[i]!=1){
-//     System.out.println(arr[i] + "count is" +count);
-// }
-// }
+int arr[] = {3,5,3,5,7,3,4,6,2,4,4,4};
+for(int i=0;i<arr.length-1;++i){
+boolean dup=false;
+int count=1;
+for(int j=i+1; j<arr.length;++j)
+{
+    if(arr[i]==arr[j] && arr[i]!=-1)
+    {
+        ++count;
+        arr[j]=-1;
+        dup=true;
+    }
+}
+if(dup && arr[i]!=1){
+    System.out.println(arr[i] + "count is" +count);
+}
+}
 
-//Target value.
+Target value.
 
-// int  arr[]={1,4,5,3,8};
-// int target=9;
+int  arr[]={1,4,5,3,8};
+int target=9;
 
-// for(int i=0; i<arr.length;i++){
-//     for(int j=i+1;j<arr.length;j++){
-//         if(arr[i]+arr[j] == target){
-//             System.out.println(arr[i]);
-//             System.out.println(arr[j]);
-//         }
+for(int i=0; i<arr.length;i++){
+    for(int j=i+1;j<arr.length;j++){
+        if(arr[i]+arr[j] == target){
+            System.out.println(arr[i]);
+            System.out.println(arr[j]);
+        }
         
             
         
 
-//   }
-//  }
+  }
+ }
 
-//Ascending order and dscending order
-// int arr[]={4,7,3,9,11,6,};
-// for(int i=0; i<arr.length;++i){
-//     for(int j=i+1;j<arr.length;++j){
-//         if(arr[i]>arr[j])
-//         {
-//             int temp=arr[i];
-//             arr[i]=arr[j];
-//             arr[j]=temp;
-//         }
-//     }
-//     System.out.println("dscending"+arr[i]);
-// }
+Ascending order and dscending order
+int arr[]={4,7,3,9,11,6,};
+for(int i=0; i<arr.length;++i){
+    for(int j=i+1;j<arr.length;++j){
+        if(arr[i]>arr[j])
+        {
+            int temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+        }
+    }
+    System.out.println("dscending"+arr[i]);
+}
 
 String str1="EFGH";
 String Str2="FG";
