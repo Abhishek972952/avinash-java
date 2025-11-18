@@ -67,7 +67,7 @@ import java.util.Scanner ;
     //     for(int j=0;j<word.length();++j){
     //         for(int k=0;k<word.length();++k){
     //             if(i!=j && j!=k && i!=k){
-
+ 
     //                 char a=word.charAt(i);
     //                 char b=word.charAt(j);
     //                 char c=word.charAt(k);
@@ -106,25 +106,44 @@ import java.util.Scanner ;
 // }
 // }
 
-int arr[]={1,3,5,7,3,6,8};
-for(int i=0;i<arr.length;i++){
-    int count=1;
-    for(int j=i+1;j<arr.length;j++){
-            if(arr[i]==arr[j]){
-                count++;
-            }
-            if(i!=0 && arr[i]==arr[i-1]) 
-            { 
-                break;
-            }
+// int arr[]={1,3,5,7,3,6,8};
+// for(int i=0;i<arr.length;i++){
+//     int count=1;
+//     for(int j=i+1;j<arr.length;j++){
+//             if(arr[i]==arr[j]){
+//                 count++;
+//             }
+//             if(i!=0 && arr[i]==arr[i-1]) 
+//             { 
+//                 break;
+//             }
         
 
-        System.out.println(arr[i] +"=> " +count);
+//         System.out.println(arr[i] +"=> " +count);
+//     }
+// }
+
+String str1="abcd";
+String str2="dcba";
+
+if(str1.length()!=str2.length()){
+    System.out.println(" not anagram");
+    return;
+}
+
+int count[] =new int[256];
+for(int i=0;i<str1.length();++i) count[str1.charAt(i)]++;
+for(int i=0;i<str1.length();++i) count[str1.charAt(i)]--;
+for(int i=0;i<256;++i) 
+{
+    if(count[i]!=0)
+    {
+        System.out.println("not anagram");
+        return;
     }
 }
 
-
-
+System.out.println(" anagram");
 
 }
 }

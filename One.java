@@ -49,21 +49,21 @@ import java.util.Scanner ;
 
 
 //  } 
-// int  arr[]={1,4,5,3,8};
-// int targt=9;
+int  arr[]={1,4,5,3,8};
+int targt=9;
 
-// for(int i=0; i<arr.leght;i++){
-//     for(j=i+1;j<arr.lenght;j++){
-//         if(arr[j]+arr[i]=Target){
-//             System.out.println(arr[i]);
-//             System.out.println(arr[]);
-//         }
+for(int i=0; i<arr.length;i++){
+    for(int j=i+1;j<arr.length;j++){
+        if(arr[i]+arr[j]=Target){
+            System.out.println(arr[i]);
+            System.out.println(arr[j]);
+        }
         
             
         
 
-//  }
-// }
+}
+ }
 
 // int arr[]={1,2,3,4,5}
 // target=7
@@ -108,25 +108,25 @@ import java.util.Scanner ;
 
 // System.out.println(fullName);
 
-String st="[{({})]";
-int curly=0;
-int sq=0;
-int cir=0;
+// String st="[{({})]";
+// int curly=0;
+// int sq=0;
+// int cir=0;
 
 
-for(int i=0; i<st.length();++i)
-{
-char c=st.charAt(i);
-if(c=='{') ++curly;
-if(c=='[') ++sq;
-if(c=='(') ++cir;
+// for(int i=0; i<st.length();++i)
+// {
+// char c=st.charAt(i);
+// if(c=='{') ++curly;
+// if(c=='[') ++sq;
+// if(c=='(') ++cir;
 
-if(c=='}') --curly;
-if(c==']') --sq;
-if(c==')') --cir;
-}
-if(curly==0 && sq==0 && cir==0) System.out.println("bal");
-else System.out.println("not");
+// if(c=='}') --curly;
+// if(c==']') --sq;
+// if(c==')') --cir;
+// }
+// if(curly==0 && sq==0 && cir==0) System.out.println("bal");
+// else System.out.println("not");
 
 
 }
