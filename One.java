@@ -1,10 +1,20 @@
-import java.util.Scanner ;
+// class One
+// {
 
- class One
-{
-    public static void main(String args[])
-   { 
+// int a;
 
+
+// void Sum()
+// {
+// System.out.println("hello world");
+// }
+
+
+//  public static void main(String args[])
+// { 
+// One obj=new One ();
+// obj.a=45;
+// obj.Sum();
 
 // int arr[] = {4,5,8,6,4,5,7,8,5};
 // for(int i=0; i<arr.length-1;i++)
@@ -49,21 +59,21 @@ import java.util.Scanner ;
 
 
 //  } 
-int  arr[]={1,4,5,3,8};
-int targt=9;
+// int  arr[]={1,4,5,3,8};
+// int targt=9;
 
-for(int i=0; i<arr.length;i++){
-    for(int j=i+1;j<arr.length;j++){
-        if(arr[i]+arr[j]=Target){
-            System.out.println(arr[i]);
-            System.out.println(arr[j]);
-        }
+// for(int i=0; i<arr.length;i++){
+//     for(int j=i+1;j<arr.length;j++){
+//         if(arr[i]+arr[j]=Target){
+//             System.out.println(arr[i]);
+//             System.out.println(arr[j]);
+//         }
         
             
         
 
-}
- }
+// }
+//  }
 
 // int arr[]={1,2,3,4,5}
 // target=7
@@ -129,8 +139,43 @@ for(int i=0; i<arr.length;i++){
 // else System.out.println("not");
 
 
+
+interface i1
+{
+    void sum();
+}
+interface i2
+{
+    void display();
+} 
+
+class One implements i1,i2
+{
+    public void sum()
+    {
+        System.out.println("this code is run");
+        
+    }
+
+
+public void display()
+{
+    System.out.println("abhishek");
+}  
+
+public static void main(String args[])
+{
+    One obj=new One();
+    obj.sum();
+    obj.display();
+
+
 }
 }
+
+
+
+
  
 
  
