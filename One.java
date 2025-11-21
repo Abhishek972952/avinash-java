@@ -140,38 +140,96 @@
 
 
 
-interface i1
-{
-    void sum();
-}
-interface i2
-{
-    void display();
-} 
+// interface i1
+// {
+//     void sum();
+// }
+// interface i2
+// {
+//     void display();
+// } 
 
-class One implements i1,i2
-{
-    public void sum()
-    {
-        System.out.println("this code is run");
+// class One implements i1,i2
+// {
+//     public void sum()
+//     {
+//         System.out.println("this code is run");
         
+//     }
+
+
+// public void display()
+// {
+//     System.out.println("abhishek");
+// }  
+
+// public static void main(String args[])
+// {
+//     One obj=new One();
+//     obj.sum();
+//     obj.display();
+
+
+// }
+// }
+
+//inheritance
+
+class Two
+{
+    void sum()
+    {
+        System.out.println("abhishek");
+    }
+}
+
+class One extends Two{
+    void sum()
+    {
+        System.out.println("mishra");
     }
 
 
-public void display()
-{
-    System.out.println("abhishek");
-}  
-
-public static void main(String args[])
-{
+public static void main(String args[]){
     One obj=new One();
     obj.sum();
-    obj.display();
+}
+    
+}
+//polymerphism
+class Third
+{
+    void sum()
+    {
+        System.out.println("sum1");
+    }
+}
+
+class Forth extends Third
+{
+    void sum()
+    {
+         System.out.println("sum2");
+    }
+}
+
+class One {
+    public static void  main(String args[])
+{
+    Third obj;
+
+    obj=new Third();
+    obj.sum();
+
+    obj=new Forth();
+} 
+}    
 
 
-}
-}
+
+
+
+
 
 
 
