@@ -1,10 +1,10 @@
-import java.util.Scanner ;
+// import java.util.Scanner ;
 
- class Second
-{
-    public static void main(String args[])
-   { 
-
+//  class Second
+// {
+//     public static void main(String args[])
+//    { 
+// 
 // String firstname="abhi";
 // String Lastname="mishra" ;
 
@@ -123,30 +123,56 @@ import java.util.Scanner ;
 //     }
 // }
 
-String str1="abcd";
-String str2="dcba";
+// String str1="abcd";
+// String str2="dcba";
 
-if(str1.length()!=str2.length()){
-    System.out.println(" not anagram");
-    return;
+// if(str1.length()!=str2.length()){
+//     System.out.println(" not anagram");
+//     return;
+// }
+
+// int count[] =new int[256];
+// for(int i=0;i<str1.length();++i) count[str1.charAt(i)]++;
+// for(int i=0;i<str1.length();++i) count[str1.charAt(i)]--;
+// for(int i=0;i<256;++i) 
+// {
+//     if(count[i]!=0)
+//     {
+//         System.out.println("not anagram");
+//         return;
+//     }
+// }
+
+// System.out.println(" anagram");
+
+// }
+// }
+interface Mahindra
+{
+    void  data();
 }
 
-int count[] =new int[256];
-for(int i=0;i<str1.length();++i) count[str1.charAt(i)]++;
-for(int i=0;i<str1.length();++i) count[str1.charAt(i)]--;
-for(int i=0;i<256;++i) 
+class thar implements Mahindra
 {
-    if(count[i]!=0)
+    public void data()
     {
-        System.out.println("not anagram");
-        return;
+        int price=125000;
+        String model="xpp";
+        System.out.println(price+""+model);
     }
 }
 
-System.out.println(" anagram");
-
+class nexon implements Mahindra{
+    public void data()
+    {
+       int price=156000;
+    String model="xuv";
+    System.out.println(price+""+model); 
+    }
+    
 }
-}
+   
+   
 
 
 

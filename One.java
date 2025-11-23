@@ -175,55 +175,80 @@
 
 //inheritance
 
-class Two
+// class Two
+// {
+//     void sum()
+//     {
+//         System.out.println("abhishek");
+//     }
+// }
+
+// class One extends Two{
+//     void sum()
+//     {
+//         System.out.println("mishra");
+//     }
+
+
+// public static void main(String args[]){
+//     One obj=new One();
+//     obj.sum();
+// }
+    
+// }
+// //polymerphism
+// class Third
+// {
+//     void sum()
+//     {
+//         System.out.println("sum1");
+//     }
+// }
+
+// class Forth extends Third
+// {
+//     void sum()
+//     {
+//          System.out.println("sum2");
+//     }
+// }
+
+// class One {
+//     public static void  main(String args[])
+// {
+//     Third obj;
+
+//     obj=new Third();
+//     obj.sum();
+
+//     obj=new Forth();
+// } 
+// }  
+
+interface Mahindra
 {
-    void sum()
+    void  data();
+}
+
+class thar implements Mahindra
+{
+    public void data()
     {
-        System.out.println("abhishek");
+        int price=125000;
+        String model="xpp";
+        System.out.println(price+""+model);
     }
 }
 
-class One extends Two{
-    void sum()
+class nexon implements Mahindra{
+    public void data()
     {
-        System.out.println("mishra");
+       int price=156000;
+    String model="xuv";
+    System.out.println(price+""+model); 
     }
-
-
-public static void main(String args[]){
-    One obj=new One();
-    obj.sum();
-}
     
 }
-//polymerphism
-class Third
-{
-    void sum()
-    {
-        System.out.println("sum1");
-    }
-}
-
-class Forth extends Third
-{
-    void sum()
-    {
-         System.out.println("sum2");
-    }
-}
-
-class One {
-    public static void  main(String args[])
-{
-    Third obj;
-
-    obj=new Third();
-    obj.sum();
-
-    obj=new Forth();
-} 
-}    
 
 
 
