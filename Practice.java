@@ -125,38 +125,62 @@
 
 // }
  
-interface i1
-{
-    void sum();
-}
-interface i2
-{
-    void display();
-} 
+// interface i1
+// {
+//     void sum();
+// }
+// interface i2
+// {
+//     void display();
+// } 
 
-class One implements i1,i2
-{
-    public void sum()
-    {
-        System.out.println("abhsihek mishra");
+// class One implements i1,i2
+// {
+//     public void sum()
+//     {
+//         System.out.println("abhsihek mishra");
         
+//     }
+
+
+// public void display()
+// {
+//     System.out.println("avinash mishra");
+// }  
+
+// public static void main(String args[])
+// {
+//     One obj=new One();
+//     obj.sum();
+//     obj.display();
+
+
+// }
+// }
+
+
+
+interface Mahindra
+{
+    void  data();
+}
+
+class thar implements Mahindra
+{
+    public void data()
+    {
+        int price=125000;
+        String model="xpp";
+        System.out.println(price+""+model);
     }
-
-
-public void display()
-{
-    System.out.println("avinash mishra");
-}  
-
-public static void main(String args[])
-{
-    One obj=new One();
-    obj.sum();
-    obj.display();
-
-
-}
 }
 
-
-
+class nexon implements Mahindra{
+    public void data()
+    {
+       int price=156000;
+    String model="xuv";
+    System.out.println(price+""+model); 
+    }
+    
+}
