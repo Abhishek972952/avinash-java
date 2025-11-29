@@ -1,3 +1,5 @@
+import java.io.*;
+
 // class Copy
 // {
 //     int a;
@@ -43,24 +45,62 @@
 // }
 // }
 
-class Copy{
+// class Copy{
     
-}
-public  static void main (String args[])
+// }
+
+// public  static void main (String args[])
+
+// {
+// try
+//    {
+
+//     int a=10;
+//     int b=0;
+//     System.out.println(a/b);
+// }
+                                    
+// catch(ArithmeticException obj)
+// {
+// System.out.println("jnfeknfk");
+
+// }
+// }
+
+class Arithmetic extends  RuntimeException
 {
-try
-   {
-    int a=10;
-    int b=0;
-    System.out.println(a/b);
+    Arithmetic(String msg)
+    {
+        super(msg);
+    }
 }
 
-                                    
-catch(ArithmeticException obj)
+class Copy
 {
-System.out.println("jnfeknfk");
+    public  static void main(String args[])
+    {
+        int a=10;
+        int b=0;
+    
+
+
+try 
+{
+
+if(b==0) throw new Arithmetic("dont divide by zero");
+
+}
+
+catch(Arithmetic e)
+{
+    System.out.println(e);
+}
+
 }
 }
+
+
+
 
 
 
