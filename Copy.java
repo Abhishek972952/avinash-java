@@ -67,36 +67,62 @@ import java.io.*;
 // }
 // }
 
-class Arithmetic extends  RuntimeException
-{
-    Arithmetic(String msg)
-    {
-        super(msg);
-    }
-}
+// class Arithmetic extends  RuntimeException
+// {
+//     Arithmetic(String msg)
+//     {
+//         super(msg);
+//     }
+// }
 
-class Copy
-{
-    public  static void main(String args[])
-    {
-        int a=10;
-        int b=0;
+// class Copy
+// {
+//     public  static void main(String args[])
+//     {
+//         int a=10;
+//         int b=0;
     
 
 
-try 
+// try 
+// {
+
+// if(b==0) throw new Arithmetic("dont divide by zero");
+
+// }
+
+// catch(Arithmetic e)
+// {
+//     System.out.println(e);
+// }
+
+// }
+// }
+
+import java.util.Scanner;
+class Copy{
+    public static void main(String args[])
+    {
+        Scanner obj=new Scanner(System.in);
+        int a=10;
+        int b=0;
+
+try{
+    System.out.println(a/b);
+}  
+
+catch(Exception obj1)
 {
-
-if(b==0) throw new Arithmetic("dont divide by zero");
+System.out.println(a/b);
+System.out.println(obj1);
 
 }
 
-catch(Arithmetic e)
+finally
 {
-    System.out.println(e);
+    obj.close();
 }
-
-}
+    }
 }
 
 
