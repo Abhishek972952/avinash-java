@@ -1,6 +1,6 @@
-// import java.util.Scanner;
-// public class practice{
-//     public static void main(String  args[]){
+import java.util.Scanner;
+public class Practice{
+    public static void main(String  args[]){
 
 // duplicate value.
 
@@ -160,27 +160,48 @@
 
 
 
-interface Mahindra
-{
-    void  data();
-}
+// interface Mahindra
+// {
+//     void  data();
+// }
 
-class thar implements Mahindra
-{
-    public void data()
-    {
-        int price=125000;
-        String model="xpp";
-        System.out.println(price+""+model);
-    }
-}
+// class thar implements Mahindra
+// {
+//     public void data()
+//     {
+//         int price=125000;
+//         String model="xpp";
+//         System.out.println(price+""+model);
+//     }
+// }
 
-class nexon implements Mahindra{
-    public void data()
-    {
-       int price=156000;
-    String model="xuv";
-    System.out.println(price+""+model); 
-    }
+// class nexon implements Mahindra{
+//     public void data()
+//     {
+//        int price=156000;
+//     String model="xuv";
+//     System.out.println(price+""+model); 
+//     }
     
+// }
+
+int num=153;
+int sum=0;
+int temp=num;
+while(num>0)
+{
+    int digit=num%10;
+    sum=sum+(digit*digit*digit);
+    num=num/10;
+}
+if(temp==sum){
+    System.out.println("Armstrong");
+}
+else{
+    System.out.println("not armstrong");
+}
+
+
+
+}
 }

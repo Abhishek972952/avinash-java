@@ -1,6 +1,7 @@
 import java.util.Scanner;
-class A1{
-    public static void main(String args[])
+class A1
+{
+public static void main(String args[])
 {
 Scanner obj=new Scanner(System.in);
 int a=10;
@@ -13,15 +14,18 @@ System.out.println(a/b);
 
 catch(Exception obj1)
 {
-System.out.println("abhishek mishra");
+System.out.println(a/b);
 System.out.println(obj1);
 
 }
 
 finally
 {
+System.out.println("finally block hamesha chalega"); 
 obj.close();
 }
+
+
 
 }
 }
