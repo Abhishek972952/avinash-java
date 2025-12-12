@@ -185,23 +185,51 @@ public class Practice{
     
 // }
 
-int num=153;
+// int num=153;
+// int sum=0;
+// int temp=num;
+// while(num>0)
+// {
+//     int digit=num%10;
+//     sum=sum+(digit*digit*digit);
+//     num=num/10;
+// }
+// if(temp==sum){
+//     System.out.println("Armstrong");
+// }
+// else{
+//     System.out.println("not armstrong");
+// }
+
+
+
+// }
+// }
+
+Scanner sc=new Scanner(System.in);
+System.out.println("To check the number of armstrong:");
+
+int num=sc.nextInt();
+
 int sum=0;
-int temp=num;
+int original=num;
+
 while(num>0)
 {
     int digit=num%10;
-    sum=sum+(digit*digit*digit);
-    num=num/10;
+    sum=sum+digit*digit*digit;
+    num =num/10;
+
 }
-if(temp==sum){
-    System.out.println("Armstrong");
+
+if(sum==original)
+{
+    System.out.println("It is an armstrong");
 }
+
 else{
-    System.out.println("not armstrong");
+    System.out.println("It is not an armstrong");
 }
 
-
-
 }
-}
+    }
