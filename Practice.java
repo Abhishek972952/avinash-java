@@ -54,19 +54,24 @@ public class Practice{
 //     System.out.println("dscending"+arr[i]);
 // }
 
-// String str1="EFGH";
-// String Str2="FG";
+
+
+
+// String Str1="ABDGF";
+
+// String Str2="ABD";
+
 // int i=0;
 // int j=0;
 
-// while(i<str1.length() && j<str2.length()){
-//     if(str1.charAt(i)==str2.charAt(j)){
+// while(i<Str1.length() && j<Str2.length()){
+//     if(Str1.charAt(i)==Str2.charAt(j)){
 //         ++j;
 //     }
 //     ++i;
 // }
-// if(j==str2.length()) System.out.println("subsequence");
-// else System.out.println("not");
+// if(j==Str2.length()) System.out.println("subsequence");
+// else System.out.println("not subsequence");
 
 // //angram sequence.
 
@@ -206,30 +211,51 @@ public class Practice{
 // }
 // }
 
+// Scanner sc=new Scanner(System.in);
+// System.out.println("To check the number of armstrong:");
+
+// int num=sc.nextInt();
+
+// int sum=0;
+// int original=num;
+
+// while(num>0)
+// {
+//     int digit=num%10;
+//     sum=sum+digit*digit*digit;
+//     num =num/10;
+
+// }
+
+// if(sum==original)
+// {
+//     System.out.println("It is an armstrong");
+// }
+
+// else{
+//     System.out.println("It is not an armstrong");
+// }
+
 Scanner sc=new Scanner(System.in);
-System.out.println("To check the number of armstrong:");
 
-int num=sc.nextInt();
+System.out.println("first str1");
+String Str1=sc.nextLine();
 
-int sum=0;
-int original=num;
+System.out.println("second str2");
+String Str2=sc.nextLine();
 
-while(num>0)
+int i=0;
+int  j=0;
+
+while(i<Str1.length() && j<Str2.length())
 {
-    int digit=num%10;
-    sum=sum+digit*digit*digit;
-    num =num/10;
-
+    if(Str1.charAt(i)==Str2.charAt(j))
+    {
+        j++;
+    }
 }
+i++;
 
-if(sum==original)
-{
-    System.out.println("It is an armstrong");
-}
-
-else{
-    System.out.println("It is not an armstrong");
-}
 
 }
     }
