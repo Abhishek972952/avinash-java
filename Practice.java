@@ -44,7 +44,8 @@ public class Practice{
 //Ascending order and dscending order
 // int arr[]={4,7,3,9,11,6,};
 // for(int i=0; i<arr.length;++i){
-//     for(int j=i+1;j<arr.length;++j){
+//     for(int j=i+1;j<arr.length;++j)
+//        {
 //         if(arr[i]>arr[j])
 //         {
 //             int temp=arr[i];

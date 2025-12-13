@@ -1,5 +1,5 @@
-// class One
-// {
+class One
+{
 
 // int a;
 
@@ -122,38 +122,38 @@
 
 
 
-// interface i1
-// {
-//     void sum();
-// }
-// interface i2
-// {
-//     void display();
-// } 
+interface i1
+{
+    void sum();
+}
+interface i2
+{
+    void display();
+} 
 
-// class One implements i1,i2
-// {
-//     public void sum()
-//     {
-//         System.out.println("this code is run");
+class One implements i1,i2
+{
+    public void sum()
+    {
+        System.out.println("this code is run");
         
-//     }
+    }
 
 
-// public void display()
-// {
-//     System.out.println("abhishek");
-// }  
+public void display()
+{
+    System.out.println("abhishek");
+}  
 
-// public static void main(String args[])
-// {
-//     One obj=new One();
-//     obj.sum();
-//     obj.display();
+public static void main(String args[])
+{
+    One obj=new One();
+    obj.sum();
+    obj.display();
 
 
-// }
-// }
+}
+}
 
 //inheritance
 
@@ -207,30 +207,30 @@
 // } 
 // }  
 
-interface Mahindra
-{
-    void  data();
-}
+// interface Mahindra
+// {
+//     void  data();
+// }
 
-class thar implements Mahindra
-{
-    public void data()
-    {
-        int price=125000;
-        String model="xpp";
-        System.out.println(price+""+model);
-    }
-}
+// class thar implements Mahindra
+// {
+//     public void data()
+//     {
+//         int price=125000;
+//         String model="xpp";
+//         System.out.println(price+""+model);
+//     }
+// }
 
-class nexon implements Mahindra{
-    public void data()
-    {
-       int price=156000;
-    String model="xuv";
-    System.out.println(price+""+model); 
+// class nexon implements Mahindra{
+//     public void data()
+//     {
+//        int price=156000;
+//     String model="xuv";
+//     System.out.println(price+""+model); 
     }
     
-}
+ 
 
 
 
