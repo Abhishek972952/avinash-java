@@ -40,7 +40,8 @@ public class Practice{
 //   }
 //  }
 
-// Ascending order and dscending order
+
+//Ascending order and dscending order
 // int arr[]={4,7,3,9,11,6,};
 // for(int i=0; i<arr.length;++i){
 //     for(int j=i+1;j<arr.length;++j){
@@ -51,7 +52,7 @@ public class Practice{
 //             arr[j]=temp;
 //         }
 //     }
-//     System.out.println("dscending"+arr[i]);
+//     System.out.println("descending order-"arr[i]);
 // }
 
 
@@ -94,8 +95,8 @@ public class Practice{
 //         return;
 //     }
 // }
-
-// System.out.println(" anagram");
+    
+// System.out.println(" anagram"); 
 
 // String str1="AbCdE";
 // char arr[]=str1.toCharArray();
@@ -110,6 +111,7 @@ public class Practice{
 //         arr[i]=(char)(arr[i]-32);
 //     }
 // }
+
 // String obj=new String(arr);
 // System.out.println(obj);
 
@@ -236,26 +238,88 @@ public class Practice{
 //     System.out.println("It is not an armstrong");
 // }
 
-Scanner sc=new Scanner(System.in);
+// Scanner sc=new Scanner(System.in);
 
-System.out.println("first str1");
-String Str1=sc.nextLine();
+// System.out.println("first str1");
+// String Str1=sc.nextLine();
 
-System.out.println("second str2");
-String Str2=sc.nextLine();
+// System.out.println("second str2");
+// String Str2=sc.nextLine();
 
-int i=0;
-int  j=0;
+// int i=0;
+// int  j=0;
 
-while(i<Str1.length() && j<Str2.length())
+// while(i<Str1.length() && j<Str2.length())
+// {
+//     if(Str1.charAt(i)==Str2.charAt(j))
+//     {
+//         j++;
+//     }
+// }
+// i++;
+
+// int arr[]={0,1,6,0,2};
+// int index=0;
+
+// for(int i=0;i<arr.length;++i){
+//     if(arr[i]!= 0){
+//         arr[index++]=arr[i];
+//     }
+// }
+// for(int i=index;i<arr.length;++i)  
+// arr[i]=0;
+// for(int i=0; i<arr.length; ++i) 
+// System.out.println(arr[i]);
+
+
+// int fact=1;
+
+// for(int i=1;i<=3;++i)
+// {
+//     fact=fact*i;
+// }
+
+// System.out.println(fact);
+ 
+// }
+//     }
+
+int n=4;
+for(int i=1; i<=n; i++)
 {
-    if(Str1.charAt(i)==Str2.charAt(j))
+    for(int j=1; j<=(n-i); j++)
     {
-        j++;
+        System.out.println(" ");
     }
+
+    for(int j=1;j<=(2*i)-1;j++)
+
+    {
+        System.out.println("*");
+    }
+
+    System.out.println();
+
 }
-i++;
+
+for(int i=n;i>=1;i--)
+{
+    for(int j=1;j<=(n-i);j++)
+    {
+        System.out.println("");
+    }
+
+    for(int j=1;j<=(2*i)-1;j++)
+
+    {
+        System.out.println("*");
+    }
+
+    System.out.println("");
 
 
 }
     }
+}
+    
+    

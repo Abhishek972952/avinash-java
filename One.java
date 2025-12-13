@@ -118,25 +118,7 @@
 
 // System.out.println(fullName);
 
-// String st="[{({})]";
-// int curly=0;
-// int sq=0;
-// int cir=0;
 
-
-// for(int i=0; i<st.length();++i)
-// {
-// char c=st.charAt(i);
-// if(c=='{') ++curly;
-// if(c=='[') ++sq;
-// if(c=='(') ++cir;
-
-// if(c=='}') --curly;
-// if(c==']') --sq;
-// if(c==')') --cir;
-// }
-// if(curly==0 && sq==0 && cir==0) System.out.println("bal");
-// else System.out.println("not");
 
 
 
