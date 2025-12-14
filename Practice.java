@@ -285,42 +285,53 @@ public class Practice{
 // }
 //     }
 
+// int n=4;
+// for(int i=1; i<=n; i++)
+// {
+//     for(int j=1; j<=(n-i); j++)
+//     {
+//         System.out.println(" ");
+//     }
+
+//     for(int j=1;j<=(2*i)-1;j++)
+
+//     {
+//         System.out.println("*");
+//     }
+
+//     System.out.println();
+
+// }
+
+// for(int i=n;i>=1;i--)
+// {
+//     for(int j=1;j<=(n-i);j++)
+//     {
+//         System.out.println("");
+//     }
+
+//     for(int j=1;j<=(2*i)-1;j++)
+
+//     {
+//         System.out.println("*");
+//     }
+
+//     System.out.println("");
+
+
+// }
+
+Scanner sc=new Scanner(System.in);
+
 int n=4;
-for(int i=1; i<=n; i++)
+
+for(int i=1;i<=10;++i)
 {
-    for(int j=1; j<=(n-i); j++)
-    {
-        System.out.println(" ");
-    }
-
-    for(int j=1;j<=(2*i)-1;j++)
-
-    {
-        System.out.println("*");
-    }
-
-    System.out.println();
-
+    System.out.println(n*i);
 }
-
-for(int i=n;i>=1;i--)
-{
-    for(int j=1;j<=(n-i);j++)
-    {
-        System.out.println("");
-    }
-
-    for(int j=1;j<=(2*i)-1;j++)
-
-    {
-        System.out.println("*");
-    }
-
-    System.out.println("");
 
 
 }
-    }
 }
     
     
