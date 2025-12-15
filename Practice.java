@@ -323,13 +323,26 @@ public class Practice{
 
 Scanner sc=new Scanner(System.in);
 
-int n=4;
+// int n=4;
 
-for(int i=1;i<=10;++i)
+// for(int i=1;i<=10;++i)
+// {
+//     System.out.println(n*i);
+// }
+
+//create a factor:
+
+System.out.println("enter a number");
+int fact=sc.nextInt();
+
+
+for(int i=1;i<=fact;++i)
 {
-    System.out.println(n*i);
+    if(fact % i==0)
+    {
+        System.out.println(i);
+    }
 }
-
 
 }
 }
