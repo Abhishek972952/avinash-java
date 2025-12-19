@@ -100,7 +100,7 @@
 // }
 
 import java.util.Scanner;
-class Copy{
+class Copy {
     public static void main(String args[])
     {
         Scanner obj=new Scanner(System.in);
@@ -114,6 +114,7 @@ try{
 catch(Exception obj1)
 {
 System.out.println(a/b);
+
 System.out.println(obj1);
 
 }

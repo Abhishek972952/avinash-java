@@ -332,19 +332,26 @@ Scanner sc=new Scanner(System.in);
 
 //create a factor:
 
-System.out.println("enter a number");
-int fact=sc.nextInt();
+// System.out.println("enter a number");
+// int fact=sc.nextInt();
 
 
-for(int i=1;i<=fact;++i)
-{
-    if(fact % i==0)
-    {
-        System.out.println(i);
-    }
-}
+// for(int i=1;i<=fact;++i)
+// {
+//     if(fact % i==0)
+//     {
+//         System.out.println(i);
+//     }
+// }
 
-}
-}
+
+
+
+   
+
+
+
+
+
     
     
