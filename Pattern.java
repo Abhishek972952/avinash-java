@@ -4,161 +4,177 @@ class Pattern
 {
    public static void main(String args[])
    {
-    // int n=4;
-    int m=5;
+//     // int n=4;
+//     int m=5;
 
-    for(int i=1;i<=n;i++)
-    {
-        for(int j=1;j<=m;j++)
-        {
-            System.out.print("*");
-        }
-        System.out.println();
-    }
+//     for(int i=1;i<=n;i++)
+//     {
+//         for(int j=1;j<=m;j++)
+//         {
+//             System.out.print("*");
+//         }
+//         System.out.println();
+//     }
 
-    int n=4;
-for(int i=1; i<=n; i++)
-{
-    for(int j=1; j<=(n-i); j++)
-    {
-        System.out.print(" ");
-    }
+//     int n=4;
+// for(int i=1; i<=n; i++)
+// {
+//     for(int j=1; j<=(n-i); j++)
+//     {
+//         System.out.print(" ");
+//     }
 
-    for(int j=1;j<=(2*i)-1;j++)
+//     for(int j=1;j<=(2*i)-1;j++)
 
-    {
-        System.out.print("*");
-    }
+//     {
+//         System.out.print("*");
+//     }
 
-    System.out.println("");
+//     System.out.println("");
 
-}
+// }
 
-for(int i=n;i>=1;i--)
-{
-    for(int j=1;j<=(n-i);j++)
-    {
-        System.out.print("");
-    }
+// for(int i=n;i>=1;i--)
+// {
+//     for(int j=1;j<=(n-i);j++)
+//     {
+//         System.out.print("");
+//     }
 
-    for(int j=1;j<=(2*i)-1;j++)
+//     for(int j=1;j<=(2*i)-1;j++)
 
-    {
-        System.out.print("*");
-    }
+//     {
+//         System.out.print("*");
+//     }
 
-    System.out.println();
+//     System.out.println();
 
-   }
+//    }
 
-int n=4;
-int m=5;
+// int n=4;
+// int m=5;
 
-for(int i=1;i<=n;i++)
-{
-    for(int j=1;j<=m;j++)
-    {
-        if(i==1 || j==1 || i==n || j==m)
-        {
-            System.out.print("*");
-        }
-        else{
-            System.out.print(" ");
-        }
-    }
-    System.out.println();
-}
+// for(int i=1;i<=n;i++)
+// {
+//     for(int j=1;j<=m;j++)
+//     {
+//         if(i==1 || j==1 || i==n || j==m)
+//         {
+//             System.out.print("*");
+//         }
+//         else{
+//             System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+// }
 
-int n=4;
+// int n=4;
 
-for(int i=n;i>=1;i--)
-{
+// for(int i=n;i>=1;i--)
+// {
 
-    for(int j=1;j<=(n-i);j++)
-    {
+//     for(int j=1;j<=(n-i);j++)
+//     {
         
-        System.out.print(" ");
-    }
+//         System.out.print(" ");
+//     }
 
-    for(int j=1;j<=i;j++)
-    {
+//     for(int j=1;j<=i;j++)
+//     {
         
-        System.out.print("*");
-    }
+//         System.out.print("*");
+//     }
 
 
-    System.out.println();
-}
+//     System.out.println();
+// }
 
-for(int i=n;i>=1;i--)
-{
-    for(int j=1;j<=i;j++)
-    {
-        System.out.print("*");
-    }
- System.out.println();
-}
+// for(int i=n;i>=1;i--)
+// {
+//     for(int j=1;j<=i;j++)
+//     {
+//         System.out.print("*");
+//     }
+//  System.out.println();
+// }
 
-int n=5;
+// int n=5;
 
-for(int i=1;i<=n;i++)
-{
+// for(int i=1;i<=n;i++)
+// {
 
-    for(int j=1;j<=i;j++)
-    {
+//     for(int j=1;j<=i;j++)
+//     {
         
-        System.out.print(" "+j);
-    }
-System.out.println();
+//         System.out.print(" "+j);
+//     }
+// System.out.println();
 
-}
+// }
 
-int n=5;
-int number=1;
+// int n=5;
+// int number=1;
 
-for(int i=1;i<=n;i++)
-{
-    for(int j=1;j<=i;j++)
-    {
-        System.out.print(" "+number);
-        number++;
-    }
+// for(int i=1;i<=n;i++)
+// {
+//     for(int j=1;j<=i;j++)
+//     {
+//         System.out.print(" "+number);
+//         number++;
+//     }
 
-    System.out.println();
-}
+//     System.out.println();
+// }
 
-Scanner sc=new Scanner(System.in);
+// Scanner sc=new Scanner(System.in);
 
-System.out.println("enter a number");
-int num=sc.nextInt();
+// System.out.println("enter a number");
+// int num=sc.nextInt();
 
-boolean prime=true;
+// boolean prime=true;
 
-for(int i=2;i<=num/2;i++)
-{
-    if(num%i==0)
-    {
-        prime=false;
-        break;
-    }
+// for(int i=2;i<=num/2;i++)
+// {
+//     if(num%i==0)
+//     {
+//         prime=false;
+//         break;
+//     }
   
-}
-if(prime)
+// }
+// if(prime)
+// {
+//     if(num==1)
+//     {
+//         System.out.println("this is prime not composite");
+//     }
+
+//     else{
+//          System.out.println("prime number");
+//     }
+
+   
+// }
+// else{
+//         System.out.println("not prime");
+//     }
+
+String str="noon";
+int n=str.length();
+
+for(int i=0;i<n/2;++i)
 {
-    if(num==1)
+    if(str.charAt(i)!=str.charAt(n-1-i))
     {
-        System.out.println("this is prime not composite");
+        System.out.println(" not pallindrom");
     }
 
     else{
-         System.out.println("prime number");
+       System.out.println(" pallindrom"); 
     }
-
-   
 }
-else{
-        System.out.println("not prime");
-    }
+
 
 }
 }
