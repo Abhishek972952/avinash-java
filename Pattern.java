@@ -4,17 +4,17 @@ class Pattern
 {
    public static void main(String args[])
    {
-//     // int n=4;
-//     int m=5;
+    // int n=4;
+    // int m=5;
 
-//     for(int i=1;i<=n;i++)
-//     {
-//         for(int j=1;j<=m;j++)
-//         {
-//             System.out.print("*");
-//         }
-//         System.out.println();
-//     }
+    // for(int i=1;i<=n;i++)
+    // {
+    //     for(int j=1;j<=m;j++)
+    //     {
+    //         System.out.print("*");
+    //     }
+    //     System.out.println();
+    // }
 
 //     int n=4;
 // for(int i=1; i<=n; i++)
@@ -160,20 +160,34 @@ class Pattern
 //         System.out.println("not prime");
 //     }
 
-String str="noon";
-int n=str.length();
+// String str="noon";
+// int n=str.length();
 
-for(int i=0;i<n/2;++i)
+// for(int i=0;i<n/2;++i)
+// {
+//     if(str.charAt(i)!=str.charAt(n-1-i))
+//     {
+//         System.out.println(" not pallindrom");
+//     }
+
+//     else{
+//        System.out.println(" pallindrom"); 
+//     }
+// }
+
+int a=4;
+int b=3;
+int c;
+
+for(int i=1;i<=5 ; ++i)
 {
-    if(str.charAt(i)!=str.charAt(n-1-i))
-    {
-        System.out.println(" not pallindrom");
-    }
-
-    else{
-       System.out.println(" pallindrom"); 
-    }
+    c=a+b;
+    System.out.println(" "+c);
+    a=b;
+    b=c;
 }
+
+
 
 
 }
