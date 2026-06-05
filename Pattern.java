@@ -175,20 +175,33 @@ class Pattern
 //     }
 // }
 
-int a=4;
-int b=3;
-int c;
+// int a=4;
+// int b=7;
+// int c;
 
-for(int i=1;i<=5 ; ++i)
-{
-    c=a+b;
-    System.out.println(" "+c);
-    a=b;
-    b=c;
+// for(int i=1;i<=5 ; ++i)
+// {
+//     c=a+b;
+//     System.out.println(" "+c);
+//     a=b;
+//     b=c;
+// }
+
+
+
+
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+String binary="";
+while(n>0){
+binary=(n%2)+binary;
+n/=2;
+}
+System.out.println(binary);
 }
 
 
 
 
-}
+
 }

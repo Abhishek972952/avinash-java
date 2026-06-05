@@ -192,22 +192,61 @@ public class Practice{
 //     }
     
 // }
+//  int a=371;
+//  int sum=0;
+//  int temp=a;
 
-// int num=153;
-// int sum=0;
-// int temp=num;
-// while(num>0)
+
+// while(a>0)
 // {
-//     int digit=num%10;
-//     sum=sum+(digit*digit*digit);
-//     num=num/10;
+//     int lastvalue=a%10;
+//     sum=sum+(lastvalue*lastvalue*lastvalue);
+//     a=a/10;
+
+//     if(temp==sum){
+//     System.out.println("armstong number ");
+//     }
+//     else {
+//         System.out.println("not armstong");
+//     }
 // }
-// if(temp==sum){
-//     System.out.println("Armstrong");
+
+// int arr[]={1,3,67,5,4};
+// for(int i=arr.length-1;i>=0;--i)
+// {
+//     System.out.println(arr[i]+" ");
 // }
-// else{
-//     System.out.println("not armstrong");
+
+// int fact=1;
+// for(int i=1;i<=3;i++){
+//     fact=fact*i;
 // }
+// System.out.println("factorial"+" "+fact);
+
+int num=6;
+int temp=0;
+for(int i=2;i<=num-1;i++)
+
+{
+    if(num%i==0)
+    {
+        temp=temp+1;
+
+    }
+    
+}
+
+if(temp>0)
+{
+    System.out.println("not a prime ");
+}
+else {
+     System.out.println(" a prime ");
+}
+
+
+
+
 
 
 
@@ -333,18 +372,23 @@ Scanner sc=new Scanner(System.in);
 //create a factor:
 
 // System.out.println("enter a number");
-// int fact=sc.nextInt();
+// int n=sc.nextInt();
+
+// int fact=1;
 
 
-// for(int i=1;i<=fact;++i)
+// for(int i=1;i<=10;i++)
 // {
-//     if(fact % i==0)
+//     if(n % i==0)
 //     {
-//         System.out.println(i);
+//         fact=fact * i;
+        
 //     }
+
+//     System.out.println("factoril ="+n);
 // }
     
-    
+
     
     
     

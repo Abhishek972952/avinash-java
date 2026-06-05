@@ -304,36 +304,39 @@ import java.util.Scanner;
 // for(int i=1;i<=10;++i){
 //     System.out.println(n*i);
 
-// int ft=0;
-// int st=1;
-// int next=0;
+int ft=0;
+int st=1;
+int next=0;
 
-// int n=0;
-// while(n<6)
-//     {
-//         if(n==0)
-//         {
-//             System.out.println(ft);
-//             ++n;
-//             continue;
-//         }
+int n=0;
+while(n<6)
+    {
+        if(n==0)
+        {
+            System.out.println(ft);
+            ++n;
+            continue;
+        }
 
-//         if(n==1)
-//         {
-//             System.out.println(st);
-//             ++n;
-//             continue;
-//         }
+        if(n==1)
+        {
+            System.out.println(st);
+            ++n;
+            continue;
+        }
 
-//         next=ft+st;
-//         ft=st;
-//         st=next;
+        next=ft+st;
+        ft=st;
+        st=next;
         
 
-//     }
-//     System.out.println(next);
+    }
+    System.out.println(next);
 
-//     ++n;
+    ++n
 
-}
    }
+   }
+
+
+   
