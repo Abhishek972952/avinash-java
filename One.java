@@ -1,5 +1,7 @@
 class One
 {
+   
+}
 
 // int a;
 
@@ -10,8 +12,8 @@ class One
 // }
 
 
-//  public static void main(String args[])
-// { 
+public static void main(String args[])
+{ 
 // One obj=new One ();
 // obj.a=45;
 // obj.Sum();
@@ -59,33 +61,38 @@ class One
 
 
 //  } 
+
 // int  arr[]={1,4,5,3,8};
 // int targt=9;
 
-// for(int i=0; i<arr.length;i++){
+// for(int i=0; i<arr.length;i++)
+// {
 //     for(int j=i+1;j<arr.length;j++){
 //         if(arr[i]+arr[j]=Target){
 //             System.out.println(arr[i]);
 //             System.out.println(arr[j]);
 //         }
         
-            
-        
-
-// }
-//  }
-
-// int arr[]={1,2,3,4,5}
-// target=7
-
-// for(int i=0; i<arr.length;i++){
-//     for(int j=i+1=; j<arr.length;j++){
-//         if(arr[i]+arr[j]==target){
-//             System.out.println();
-//         }
 //     }
 
-// }
+// }          
+        
+
+ 
+
+int arr[]={1,2,3,4,5};
+target=7;
+
+for(int i=0; i<arr.length;i++){
+    for(int j=i+1; j<arr.length;j++){
+        if(arr[i]+arr[j]==target){
+            System.out.println();
+        }
+    }
+
+}
+
+
 
 // int arr[]={1,6,0,2};
 // int index=0;
@@ -122,38 +129,36 @@ class One
 
 
 
-interface i1
-{
-    void sum();
-}
-interface i2
-{
-    void display();
-} 
+// interface i1
+// {
+//     void sum();
+// }
+// interface i2
+// {
+//     void display();
+// } 
 
-class One implements i1,i2
-{
-    public void sum()
-    {
-        System.out.println("this code is run");
+// class One implements i1,i2
+// {
+//     public void sum()
+//     {
+//         System.out.println("this code is run");
         
-    }
+//     }
 
 
-public void display()
-{
-    System.out.println("abhishek");
-}  
+// public void display()
+// {
+//     System.out.println("abhishek");
+// }  
 
-public static void main(String args[])
-{
-    One obj=new One();
-    obj.sum();
-    obj.display();
+// public static void main(String args[])
+// {
+//     One obj=new One();
+//     obj.sum();
+//     obj.display();
+// }
 
-
-}
-}
 
 //inheritance
 
@@ -217,20 +222,26 @@ public static void main(String args[])
 //     public void data()
 //     {
 //         int price=125000;
-//         String model="xpp";
+//         String model="mahindra";
 //         System.out.println(price+""+model);
 //     }
 // }
 
 // class nexon implements Mahindra{
+
 //     public void data()
 //     {
 //        int price=156000;
 //     String model="xuv";
 //     System.out.println(price+""+model); 
-    }
     
- 
+    
+
+}
+
+
+
+
 
 
 

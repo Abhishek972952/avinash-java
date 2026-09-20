@@ -4,17 +4,18 @@ class Pattern
 {
    public static void main(String args[])
    {
-    // int n=4;
-    // int m=5;
+   //  int n=4;
+   //  int m=5;
 
-    // for(int i=1;i<=n;i++)
-    // {
-    //     for(int j=1;j<=m;j++)
-    //     {
-    //         System.out.print("*");
-    //     }
-    //     System.out.println();
-    // }
+   //  for(int i=1;i<=n;++i)
+   //  {
+   //    for(int j=1;j<=m;++j)
+   //    {
+   //       System.out.print("*");
+   //    }
+   //    System.out.println();
+   //  }
+
 
 //     int n=4;
 // for(int i=1; i<=n; i++)
@@ -33,6 +34,8 @@ class Pattern
 //     System.out.println("");
 
 // }
+
+// int n=4;
 
 // for(int i=n;i>=1;i--)
 // {
@@ -85,7 +88,8 @@ class Pattern
         
 //         System.out.print("*");
 //     }
-
+//     System.out.println();
+// }
 
 //     System.out.println();
 // }
@@ -114,7 +118,7 @@ class Pattern
 // }
 
 // int n=5;
-// int number=1;
+// int number=0;
 
 // for(int i=1;i<=n;i++)
 // {
@@ -126,6 +130,30 @@ class Pattern
 
 //     System.out.println();
 // }
+
+//----------Prime number------------
+
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a number ");
+ int n=sc.nextInt();
+boolean prime = true;
+
+if(n <= 1)
+    prime = false;
+
+for(int i = 2; i <= n/2; i++)
+{
+    if(n % i == 0)
+    {
+        prime = false;
+        break;
+    }
+}
+
+if(prime)
+    System.out.println("Prime Number");
+else
+    System.out.println("Not Prime");
 
 // Scanner sc=new Scanner(System.in);
 
@@ -154,7 +182,7 @@ class Pattern
 //          System.out.println("prime number");
 //     }
 
-   
+
 // }
 // else{
 //         System.out.println("not prime");
@@ -190,18 +218,9 @@ class Pattern
 
 
 
-Scanner sc=new Scanner(System.in);
-int n=sc.nextInt();
-String binary="";
-while(n>0){
-binary=(n%2)+binary;
-n/=2;
-}
-System.out.println(binary);
-}
+
+   }
+
+   }
 
 
-
-
-
-}

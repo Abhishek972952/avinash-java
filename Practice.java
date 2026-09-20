@@ -34,6 +34,7 @@ public class Practice{
 //             System.out.println(arr[j]);
 // }
         
+        
             
         
 
@@ -223,26 +224,26 @@ public class Practice{
 // }
 // System.out.println("factorial"+" "+fact);
 
-int num=6;
-int temp=0;
-for(int i=2;i<=num-1;i++)
+// int num=6;
+// int temp=0;
+// for(int i=2;i<=num-1;i++)
 
-{
-    if(num%i==0)
-    {
-        temp=temp+1;
+// {
+//     if(num%i==0)
+//     {
+//         temp=temp+1;
 
-    }
+//     }
     
-}
+// }
 
-if(temp>0)
-{
-    System.out.println("not a prime ");
-}
-else {
-     System.out.println(" a prime ");
-}
+// if(temp>0)
+// {
+//     System.out.println("not a prime ");
+// }
+// else {
+//      System.out.println(" a prime ");
+// }
 
 
 
@@ -278,7 +279,7 @@ else {
 //     System.out.println("It is not an armstrong");
 // }
 
-// Scanner sc=new Scanner(System.in);
+//  Scanner sc=new Scanner(System.in);
 
 // System.out.println("first str1");
 // String Str1=sc.nextLine();
@@ -311,18 +312,19 @@ else {
 // for(int i=0; i<arr.length; ++i) 
 // System.out.println(arr[i]);
 
-
+//----creat Factorial-------
 // int fact=1;
 
-// for(int i=1;i<=3;++i)
+// for(int i=1;i<=7;++i)
 // {
+
 //     fact=fact*i;
 // }
 
 // System.out.println(fact);
  
-// }
-//     }
+
+    
 
 // int n=4;
 // for(int i=1; i<=n; i++)
@@ -360,16 +362,16 @@ else {
 
 // }
 
-Scanner sc=new Scanner(System.in);
+//Scanner sc=new Scanner(System.in);
 
-// int n=4;
+// int n=10;
 
 // for(int i=1;i<=10;++i)
 // {
 //     System.out.println(n*i);
 // }
 
-//create a factor:
+//--------create a factor:--------
 
 // System.out.println("enter a number");
 // int n=sc.nextInt();
@@ -377,26 +379,50 @@ Scanner sc=new Scanner(System.in);
 // int fact=1;
 
 
-// for(int i=1;i<=10;i++)
+// for(int i=1;i<=n;i++)
 // {
-//     if(n % i==0)
-//     {
+    
 //         fact=fact * i;
         
-//     }
-
-//     System.out.println("factoril ="+n);
 // }
-    
+
+//     System.out.println("Factorial="+fact);
 
     
+// int arr[]={0,1,6,0,0,2};
+// int index=0;
+
+// for(int i=0;i<arr.length;++i){
+//     if(arr[i]!= 0){
+//         arr[index++]=arr[i];
+//     }
+// }
+// for(int i=index;i<arr.length;++i)  
+// arr[i]=0;
+// for(int i=0; i<arr.length; ++i) 
+// System.out.println(arr[i]);
     
     
-    }
-    }
+    
+   // }
 
+//------Target Value------
 
+int arr[]={1,3,5,6,7,2}; 
+int target=8; 
+ 
+for(int i=0;i<arr.length;++i) 
+{ 
+    for(int j=i+1;j<arr.length;++j) 
+    { 
+        if(arr[i]+arr[j]==target) 
+        { 
+            System.out.println(arr[i]+" "+arr[j]); 
+        } 
+    } 
+}
 
+    }}
    
 
 
