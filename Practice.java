@@ -2,515 +2,514 @@ import java.util.Scanner;
 public class Practice{
     public static void main(String  args[]){
 
-// duplicate value.
+duplicate value.
 
-// int arr[] = {3,5,3,5,7,3,4,6,2,4,4,4};
-// for(int i=0;i<arr.length-1;++i){
-// boolean dup=false;
-// int count=1;
-// for(int j=i+1; j<arr.length;++j)
-// {
-//     if(arr[i]==arr[j] && arr[i]!=-1)
-//     {
-//         ++count;
-//         arr[j]=-1;
-//         dup=true;
-//     }
-// }
-// if(dup && arr[i]!=1){
-//     System.out.println(arr[i] + "count is" +count);
-// }
-// }
+int arr[] = {3,5,3,5,7,3,4,6,2,4,4,4};
+for(int i=0;i<arr.length-1;++i){
+boolean dup=false;
+int count=1;
+for(int j=i+1; j<arr.length;++j)
+{
+    if(arr[i]==arr[j] && arr[i]!=-1)
+    {
+        ++count;
+        arr[j]=-1;
+        dup=true;
+    }
+}
+if(dup && arr[i]!=1){
+    System.out.println(arr[i] + "count is" +count);
+}
+}
 
-// Target value.
+Target value.
 
-// int  arr[]={1,4,5,3,8};
-// int target=9;
+int  arr[]={1,4,5,3,8};
+int target=9;
 
-// for(int i=0; i<arr.length;i++){
-//     for(int j=i+1;j<arr.length;j++){
-//         if(arr[i]+arr[j] == target){
-//             System.out.println(arr[i]);
-//             System.out.println(arr[j]);
-// }
+for(int i=0; i<arr.length;i++){
+    for(int j=i+1;j<arr.length;j++){
+        if(arr[i]+arr[j] == target){
+            System.out.println(arr[i]);
+            System.out.println(arr[j]);
+}
         
         
             
         
 
-//   }
-//  }
+  }
+ }
 
 
-//Ascending order and dscending order
-// int arr[]={4,7,3,9,11,6,};
-// for(int i=0; i<arr.length;++i){
-//     for(int j=i+1;j<arr.length;++j)
-//        {
-//         if(arr[i]>arr[j])
-//         {
-//             int temp=arr[i];
-//             arr[i]=arr[j];
-//             arr[j]=temp;
-//         }
-//     }
-//     System.out.println("descending order-"arr[i]);
-// }
+Ascending order and dscending order
+int arr[]={4,7,3,9,11,6,};
+for(int i=0; i<arr.length;++i){
+    for(int j=i+1;j<arr.length;++j)
+       {
+        if(arr[i]>arr[j])
+        {
+            int temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+        }
+    }
+    System.out.println("descending order-"arr[i]);
+}
 
 
 
 
-// String Str1="ABDGF";
+String Str1="ABDGF";
 
-// String Str2="ABD";
+String Str2="ABD";
 
-// int i=0;
-// int j=0;
+int i=0;
+int j=0;
 
-// while(i<Str1.length() && j<Str2.length()){
-//     if(Str1.charAt(i)==Str2.charAt(j)){
-//         ++j;
-//     }
-//     ++i;
-// }
-// if(j==Str2.length()) System.out.println("subsequence");
-// else System.out.println("not subsequence");
+while(i<Str1.length() && j<Str2.length()){
+    if(Str1.charAt(i)==Str2.charAt(j)){
+        ++j;
+    }
+    ++i;
+}
+if(j==Str2.length()) System.out.println("subsequence");
+else System.out.println("not subsequence");
 
-// //angram sequence.
+//angram sequence.
 
-// String str1="abcd";
-// String str2="dcba";
+String str1="abcd";
+String str2="dcba";
 
-// if(str1.length()!=str2.length()){
-//     System.out.println(" not anagram");
-//     return;
-// }
+if(str1.length()!=str2.length()){
+    System.out.println(" not anagram");
+    return;
+}
 
-// int count[] =new int[256];
-// for(int i=0;i<str1.length();++i) count[str1.charAt(i)]++;
-// for(int i=0;i<str1.length();++i) count[str1.charAt(i)]--;
-// for(int i=0;i<256;++i) 
-// {
-//     if(count[i]!=0)
-//     {
-//         System.out.println("not anagram");
-//         return;
-//     }
-// }
+int count[] =new int[256];
+for(int i=0;i<str1.length();++i) count[str1.charAt(i)]++;
+for(int i=0;i<str1.length();++i) count[str1.charAt(i)]--;
+for(int i=0;i<256;++i) 
+{
+    if(count[i]!=0)
+    {
+        System.out.println("not anagram");
+        return;
+    }
+}
     
-// System.out.println(" anagram"); 
+System.out.println(" anagram"); 
 
-// String str1="AbCdE";
-// char arr[]=str1.toCharArray();
-// for(int i=0;i<str1.length();++i)
-// {
-//     if(arr[i]>='A' && arr[i]<='Z')
-//     {
-//         arr[i]=(char)(arr[i]+32);
-//     }
-//     else if(arr[i]>='a' && arr[i]<='z')
-//     {
-//         arr[i]=(char)(arr[i]-32);
-//     }
-// }
+String str1="AbCdE";
+char arr[]=str1.toCharArray();
+for(int i=0;i<str1.length();++i)
+{
+    if(arr[i]>='A' && arr[i]<='Z')
+    {
+        arr[i]=(char)(arr[i]+32);
+    }
+    else if(arr[i]>='a' && arr[i]<='z')
+    {
+        arr[i]=(char)(arr[i]-32);
+    }
+}
 
 
 
-// String obj=new String(arr);
-// System.out.println(obj);
+String obj=new String(arr);
+System.out.println(obj);
 
-// class Suppercl
-// {
-// int a=4;
-// }
-// class in extends Suppercl
-// {
-// public static void main(String args[] )
-// {
-//     Subcl obj=new  Subcl();
-//     System.out.println(obj.a);
-// }
-// }
-//  class Subcl extends  Suppercl
-// {
+class Suppercl
+{
+int a=4;
+}
+class in extends Suppercl
+{
+public static void main(String args[] )
+{
+    Subcl obj=new  Subcl();
+    System.out.println(obj.a);
+}
+}
+ class Subcl extends  Suppercl
+{
 
-// }
+}
  
-// interface i1
-// {
-//     void sum();
-// }
-// interface i2
-// {
-//     void display();
-// } 
+interface i1
+{
+    void sum();
+}
+interface i2
+{
+    void display();
+} 
 
-// class One implements i1,i2
-// {
-//     public void sum()
-//     {
-//         System.out.println("abhsihek mishra");
+class One implements i1,i2
+{
+    public void sum()
+    {
+        System.out.println("abhsihek mishra");
         
-//     }
+    }
 
 
-// public void display()
-// {
-//     System.out.println("avinash mishra");
-// }  
+public void display()
+{
+    System.out.println("avinash mishra");
+}  
 
-// public static void main(String args[])
-// {
-//     One obj=new One();
-//     obj.sum();
-//     obj.display();
-
-
-// }
-// }
+public static void main(String args[])
+{
+    One obj=new One();
+    obj.sum();
+    obj.display();
 
 
+}
+}
 
-// interface Mahindra
-// {
-//     void  data();
-// }
 
-// class thar implements Mahindra
-// {
-//     public void data()
-//     {
-//         int price=125000;
-//         String model="xpp";
-//         System.out.println(price+""+model);
-//     }
-// }
 
-// class nexon implements Mahindra{
-//     public void data()
-//     {
-//        int price=156000;
-//     String model="xuv";
-//     System.out.println(price+""+model); 
-//     }
+interface Mahindra
+{
+    void  data();
+}
+
+class thar implements Mahindra
+{
+    public void data()
+    {
+        int price=125000;
+        String model="xpp";
+        System.out.println(price+""+model);
+    }
+}
+
+class nexon implements Mahindra{
+    public void data()
+    {
+       int price=156000;
+    String model="xuv";
+    System.out.println(price+""+model); 
+    }
     
-// }
-//  int a=371;
-//  int sum=0;
-//  int temp=a;
+}
+ int a=371;
+ int sum=0;
+ int temp=a;
 
 
-// while(a>0)
-// {
-//     int lastvalue=a%10;
-//     sum=sum+(lastvalue*lastvalue*lastvalue);
-//     a=a/10;
+while(a>0)
+{
+    int lastvalue=a%10;
+    sum=sum+(lastvalue*lastvalue*lastvalue);
+    a=a/10;
 
-//     if(temp==sum){
-//     System.out.println("armstong number ");
-//     }
-//     else {
-//         System.out.println("not armstong");
-//     }
-// }
+    if(temp==sum){
+    System.out.println("armstong number ");
+    }
+    else {
+        System.out.println("not armstong");
+    }
+}
 
-// int arr[]={1,3,67,5,4};
-// for(int i=arr.length-1;i>=0;--i)
-// {
-//     System.out.println(arr[i]+" ");
-// }
+int arr[]={1,3,67,5,4};
+for(int i=arr.length-1;i>=0;--i)
+{
+    System.out.println(arr[i]+" ");
+}
 
-// int fact=1;
-// for(int i=1;i<=3;i++){
-//     fact=fact*i;
-// }
-// System.out.println("factorial"+" "+fact);
+int fact=1;
+for(int i=1;i<=3;i++){
+    fact=fact*i;
+}
+System.out.println("factorial"+" "+fact);
 
-// int num=6;
-// int temp=0;
-// for(int i=2;i<=num-1;i++)
+int num=6;
+int temp=0;
+for(int i=2;i<=num-1;i++)
 
-// {
-//     if(num%i==0)
-//     {
-//         temp=temp+1;
+{
+    if(num%i==0)
+    {
+        temp=temp+1;
 
-//     }
+    }
     
-// }
+}
 
-// if(temp>0)
-// {
-//     System.out.println("not a prime ");
-// }
-// else {
-//      System.out.println(" a prime ");
-// }
-
-
+if(temp>0)
+{
+    System.out.println("not a prime ");
+}
+else {
+     System.out.println(" a prime ");
+}
 
 
 
 
 
-// }
-// }
 
-// Scanner sc=new Scanner(System.in);
-// System.out.println("To check the number of armstrong:");
 
-// int num=sc.nextInt();
+}
+}
 
-// int sum=0;
-// int original=num;
+Scanner sc=new Scanner(System.in);
+System.out.println("To check the number of armstrong:");
 
-// while(num>0)
-// {
-//     int digit=num%10;
-//     sum=sum+digit*digit*digit;
-//     num =num/10;
+int num=sc.nextInt();
 
-// }
+int sum=0;
+int original=num;
 
-// if(sum==original)
-// {
-//     System.out.println("It is an armstrong");
-// }
+while(num>0)
+{
+    int digit=num%10;
+    sum=sum+digit*digit*digit;
+    num =num/10;
 
-// else{
-//     System.out.println("It is not an armstrong");
-// }
+}
 
-//  Scanner sc=new Scanner(System.in);
+if(sum==original)
+{
+    System.out.println("It is an armstrong");
+}
 
-// System.out.println("first str1");
-// String Str1=sc.nextLine();
+else{
+    System.out.println("It is not an armstrong");
+}
 
-// System.out.println("second str2");
-// String Str2=sc.nextLine();
+ Scanner sc=new Scanner(System.in);
 
-// int i=0;
-// int  j=0;
+System.out.println("first str1");
+String Str1=sc.nextLine();
 
-// while(i<Str1.length() && j<Str2.length())
-// {
-//     if(Str1.charAt(i)==Str2.charAt(j))
-//     {
-//         j++;
-//     }
-// }
-// i++;
+System.out.println("second str2");
+String Str2=sc.nextLine();
 
-// int arr[]={0,1,6,0,2};
-// int index=0;
+int i=0;
+int  j=0;
 
-// for(int i=0;i<arr.length;++i){
-//     if(arr[i]!= 0){
-//         arr[index++]=arr[i];
-//     }
-// }
-// for(int i=index;i<arr.length;++i)  
-// arr[i]=0;
-// for(int i=0; i<arr.length; ++i) 
-// System.out.println(arr[i]);
+while(i<Str1.length() && j<Str2.length())
+{
+    if(Str1.charAt(i)==Str2.charAt(j))
+    {
+        j++;
+    }
+}
+i++;
 
-//----creat Factorial-------
-// int fact=1;
+int arr[]={0,1,6,0,2};
+int index=0;
 
-// for(int i=1;i<=7;++i)
-// {
+for(int i=0;i<arr.length;++i){
+    if(arr[i]!= 0){
+        arr[index++]=arr[i];
+    }
+}
+for(int i=index;i<arr.length;++i)  
+arr[i]=0;
+for(int i=0; i<arr.length; ++i) 
+System.out.println(arr[i]);
 
-//     fact=fact*i;
-// }
+----creat Factorial-------
+int fact=1;
 
-// System.out.println(fact);
+for(int i=1;i<=7;++i)
+{
+
+    fact=fact*i;
+}
+
+System.out.println(fact);
  
 
     
 
-// int n=4;
-// for(int i=1; i<=n; i++)
-// {
-//     for(int j=1; j<=(n-i); j++)
-//     {
-//         System.out.println(" ");
-//     }
+int n=4;
+for(int i=1; i<=n; i++)
+{
+    for(int j=1; j<=(n-i); j++)
+    {
+        System.out.println(" ");
+    }
 
-//     for(int j=1;j<=(2*i)-1;j++)
+    for(int j=1;j<=(2*i)-1;j++)
 
-//     {
-//         System.out.println("*");
-//     }
+    {
+        System.out.println("*");
+    }
 
-//     System.out.println();
+    System.out.println();
 
-// }
+}
 
-// for(int i=n;i>=1;i--)
-// {
-//     for(int j=1;j<=(n-i);j++)
-//     {
-//         System.out.println("");
-//     }
+for(int i=n;i>=1;i--)
+{
+    for(int j=1;j<=(n-i);j++)
+    {
+        System.out.println("");
+    }
 
-//     for(int j=1;j<=(2*i)-1;j++)
+    for(int j=1;j<=(2*i)-1;j++)
 
-//     {
-//         System.out.println("*");
-//     }
+    {
+        System.out.println("*");
+    }
 
-//     System.out.println("");
-
-
-// }
-
-//Scanner sc=new Scanner(System.in);
-
-// int n=10;
-
-// for(int i=1;i<=10;++i)
-// {
-//     System.out.println(n*i);
-// }
-
-//--------create a factor:--------
-
-// System.out.println("enter a number");
-// int n=sc.nextInt();
-
-// int fact=1;
-
-
-// for(int i=1;i<=n;i++)
-// {
-    
-//         fact=fact * i;
-        
-// }
-
-//     System.out.println("Factorial="+fact);
-
-    
-// int arr[]={0,1,6,0,0,2};
-// int index=0;
-
-// for(int i=0;i<arr.length;++i){
-//     if(arr[i]!= 0){
-//         arr[index++]=arr[i];
-//     }
-// }
-// for(int i=index;i<arr.length;++i)  
-// arr[i]=0;
-// for(int i=0; i<arr.length; ++i) 
-// System.out.println(arr[i]);
-    
-    
-    
-   // }
-
-//------Target Value------
-
-// int arr[]={1,3,5,6,7,2}; 
-// int target=8; 
- 
-// for(int i=0;i<arr.length;++i) 
-// { 
-//     for(int j=i+1;j<arr.length;++j) 
-//     { 
-//         if(arr[i]+arr[j]==target) 
-//         { 
-//             System.out.println(arr[i]+" "+arr[j]); 
-//         } 
-//     } 
-// }
-
-//------- find a vowel and consonant-----------
-
-// Scanner sc=new Scanner(System.in);
-// System.out.println("Enter a Word");
-
-// String str =sc.nextLAine();
-
-// int vowel=0;
-// int consonant=0;
-
-// for(int i=0;i<str.length();i++)
-// {
-//     char ch=str.charAt(i);
-
-//     if(ch>='A'  && ch<='Z')
-//     {
-//         ch=(char) (ch+32);
-//     }
-
-//      if (ch == 'a' || ch == 'e' || ch == 'i' ||
-//                 ch == 'o' || ch == 'u') {
-
-//                 vowel++;
-//             }
-
-//             else if (ch >= 'a' && ch <= 'z') {
-
-//                 consonant++;
-//             }
-
-//              }
-
-//         System.out.println("Vowels = " + vowel);
-//         System.out.println("Consonants = " + consonant);
-
-
-
-//-------find the reverse word in a string--------
-
-// Scanner sc =new Scanner(System.in);
-// System.out.println("Enter a String");
-
-// String str=sc.nextLine();
-
-// String[] words=str.split(" ");
-
-// for(int  i=0;i<words.length;i++)
-// {
-//     String word=words[i];
-
-//     for(int j=word.length() -1; j>=0; j--)
-//     {
-//        System.out.print(word.charAt(j));
-//     }
-//     System.out.print(" ");
-// }
-
-//---------find count char frequency----------
-
-// Scanner sc =new Scanner(System.in);
-// System.out.println("enter a word ");
-
-// String str=sc.nextLine();
-
-// int[] frequency = new int[256];
-
-// for (int i = 0; i < str.length(); i++) {
-//             frequency[str.charAt(i)]++;
-//         }
-
-
-// for(int i=0;i<str.length();i++)
-// {
-//     char ch=str.charAt(i);
-
-//     if (frequency[ch] != 0) {
-
-//                 System.out.println(ch + " = " + frequency[ch]);
-
-//                 frequency[ch] = 0;
-//             }
-//         }
+    System.out.println("");
 
 
 }
 
+Scanner sc=new Scanner(System.in);
+
+int n=10;
+
+for(int i=1;i<=10;++i)
+{
+    System.out.println(n*i);
+}
+
+--------create a factor:--------
+
+System.out.println("enter a number");
+int n=sc.nextInt();
+
+int fact=1;
+
+
+for(int i=1;i<=n;i++)
+{
+    
+        fact=fact * i;
+        
+}
+
+    System.out.println("Factorial="+fact);
+
+    
+int arr[]={0,1,6,0,0,2};
+int index=0;
+
+for(int i=0;i<arr.length;++i){
+    if(arr[i]!= 0){
+        arr[index++]=arr[i];
     }
+}
+for(int i=index;i<arr.length;++i)  
+arr[i]=0;
+for(int i=0; i<arr.length; ++i) 
+System.out.println(arr[i]);
+    
+    
+    
+   }
+
+------Target Value------
+
+int arr[]={1,3,5,6,7,2}; 
+int target=8; 
+ 
+for(int i=0;i<arr.length;++i) 
+{ 
+    for(int j=i+1;j<arr.length;++j) 
+    { 
+        if(arr[i]+arr[j]==target) 
+        { 
+            System.out.println(arr[i]+" "+arr[j]); 
+        } 
+    } 
+}
+
+------- find a vowel and consonant-----------
+
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter a Word");
+
+String str =sc.nextLAine();
+
+int vowel=0;
+int consonant=0;
+
+for(int i=0;i<str.length();i++)
+{
+    char ch=str.charAt(i);
+
+    if(ch>='A'  && ch<='Z')
+    {
+        ch=(char) (ch+32);
+    }
+
+     if (ch == 'a' || ch == 'e' || ch == 'i' ||
+                ch == 'o' || ch == 'u') {
+
+                vowel++;
+            }
+
+            else if (ch >= 'a' && ch <= 'z') {
+
+                consonant++;
+            }
+
+             }
+
+        System.out.println("Vowels = " + vowel);
+        System.out.println("Consonants = " + consonant);
+
+
+
+-------find the reverse word in a string--------
+
+Scanner sc =new Scanner(System.in);
+System.out.println("Enter a String");
+
+String str=sc.nextLine();
+
+String[] words=str.split(" ");
+
+for(int  i=0;i<words.length;i++)
+{
+    String word=words[i];
+
+    for(int j=word.length() -1; j>=0; j--)
+    {
+       System.out.print(word.charAt(j));
+    }
+    System.out.print(" ");
+}
+
+---------find count char frequency----------
+
+Scanner sc =new Scanner(System.in);
+System.out.println("enter a word ");
+
+String str=sc.nextLine();
+
+int[] frequency = new int[256];
+
+for (int i = 0; i < str.length(); i++) {
+            frequency[str.charAt(i)]++;
+        }
+
+
+for(int i=0;i<str.length();i++)
+{
+    char ch=str.charAt(i);
+
+    if (frequency[ch] != 0) {
+
+                System.out.println(ch + " = " + frequency[ch]);
+
+                frequency[ch] = 0;
+            }
+        }
+
+
+
+
 
 
 
