@@ -114,6 +114,8 @@ public class Practice{
 //     }
 // }
 
+
+
 // String obj=new String(arr);
 // System.out.println(obj);
 
@@ -408,21 +410,58 @@ public class Practice{
 
 //------Target Value------
 
-int arr[]={1,3,5,6,7,2}; 
-int target=8; 
+// int arr[]={1,3,5,6,7,2}; 
+// int target=8; 
  
-for(int i=0;i<arr.length;++i) 
-{ 
-    for(int j=i+1;j<arr.length;++j) 
-    { 
-        if(arr[i]+arr[j]==target) 
-        { 
-            System.out.println(arr[i]+" "+arr[j]); 
-        } 
-    } 
+// for(int i=0;i<arr.length;++i) 
+// { 
+//     for(int j=i+1;j<arr.length;++j) 
+//     { 
+//         if(arr[i]+arr[j]==target) 
+//         { 
+//             System.out.println(arr[i]+" "+arr[j]); 
+//         } 
+//     } 
+// }
+
+------- find a vowel and consonant-----------
+
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter a Word");
+
+String str =sc.nextLAine();
+
+int vowel=0;
+int consonant=0;
+
+for(int i=0;i<str.length();i++)
+{
+    char ch=str.charAt(i);
+
+    if(ch>='A'  && ch<='Z')
+    {
+        ch=(char) (ch+32);
+    }
+
+     if (ch == 'a' || ch == 'e' || ch == 'i' ||
+                ch == 'o' || ch == 'u') {
+
+                vowel++;
+            }
+
+            else if (ch >= 'a' && ch <= 'z') {
+
+                consonant++;
+            }
+
+             }
+
+        System.out.println("Vowels = " + vowel);
+        System.out.println("Consonants = " + consonant);
+    }
 }
 
-    }}
+    
    
 
 

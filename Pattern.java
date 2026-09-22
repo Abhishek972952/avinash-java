@@ -133,27 +133,27 @@ class Pattern
 
 //----------Prime number------------
 
-Scanner sc=new Scanner(System.in);
-System.out.println("enter a number ");
- int n=sc.nextInt();
-boolean prime = true;
+// Scanner sc=new Scanner(System.in);
+// System.out.println("enter a number ");
+//  int n=sc.nextInt();
+// boolean prime = true;
 
-if(n <= 1)
-    prime = false;
+// if(n <= 1)
+//     prime = false;
 
-for(int i = 2; i <= n/2; i++)
-{
-    if(n % i == 0)
-    {
-        prime = false;
-        break;
-    }
-}
+// for(int i = 2; i <= n/2; i++)
+// {
+//     if(n % i == 0)
+//     {
+//         prime = false;
+//         break;
+//     }
+// }
 
-if(prime)
-    System.out.println("Prime Number");
-else
-    System.out.println("Not Prime");
+// if(prime)
+//     System.out.println("Prime Number");
+// else
+//     System.out.println("Not Prime");
 
 // Scanner sc=new Scanner(System.in);
 
@@ -204,23 +204,27 @@ else
 // }
 
 // int a=4;
-// int b=7;
+// int b=5;
 // int c;
 
-// for(int i=1;i<=5 ; ++i)
+
+// for(int i=1;i<=10;++i)
 // {
-//     c=a+b;
-//     System.out.println(" "+c);
-//     a=b;
-//     b=c;
+
+//    c=a+b;
+//    a=b;
+//    b=c;
+
+//    System.out.println(c);
 // }
 
 
 
 
 
-   }
 
    }
+
+}
 
 
