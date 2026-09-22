@@ -424,49 +424,94 @@ public class Practice{
 //     } 
 // }
 
-------- find a vowel and consonant-----------
+//------- find a vowel and consonant-----------
 
-Scanner sc=new Scanner(System.in);
-System.out.println("Enter a Word");
+// Scanner sc=new Scanner(System.in);
+// System.out.println("Enter a Word");
 
-String str =sc.nextLAine();
+// String str =sc.nextLAine();
 
-int vowel=0;
-int consonant=0;
+// int vowel=0;
+// int consonant=0;
 
-for(int i=0;i<str.length();i++)
-{
-    char ch=str.charAt(i);
+// for(int i=0;i<str.length();i++)
+// {
+//     char ch=str.charAt(i);
 
-    if(ch>='A'  && ch<='Z')
-    {
-        ch=(char) (ch+32);
-    }
+//     if(ch>='A'  && ch<='Z')
+//     {
+//         ch=(char) (ch+32);
+//     }
 
-     if (ch == 'a' || ch == 'e' || ch == 'i' ||
-                ch == 'o' || ch == 'u') {
+//      if (ch == 'a' || ch == 'e' || ch == 'i' ||
+//                 ch == 'o' || ch == 'u') {
 
-                vowel++;
-            }
+//                 vowel++;
+//             }
 
-            else if (ch >= 'a' && ch <= 'z') {
+//             else if (ch >= 'a' && ch <= 'z') {
 
-                consonant++;
-            }
+//                 consonant++;
+//             }
 
-             }
+//              }
 
-        System.out.println("Vowels = " + vowel);
-        System.out.println("Consonants = " + consonant);
-    }
+//         System.out.println("Vowels = " + vowel);
+//         System.out.println("Consonants = " + consonant);
+
+
+
+//-------find the reverse word in a string--------
+
+// Scanner sc =new Scanner(System.in);
+// System.out.println("Enter a String");
+
+// String str=sc.nextLine();
+
+// String[] words=str.split(" ");
+
+// for(int  i=0;i<words.length;i++)
+// {
+//     String word=words[i];
+
+//     for(int j=word.length() -1; j>=0; j--)
+//     {
+//        System.out.print(word.charAt(j));
+//     }
+//     System.out.print(" ");
+// }
+
+//---------find count char frequency----------
+
+// Scanner sc =new Scanner(System.in);
+// System.out.println("enter a word ");
+
+// String str=sc.nextLine();
+
+// int[] frequency = new int[256];
+
+// for (int i = 0; i < str.length(); i++) {
+//             frequency[str.charAt(i)]++;
+//         }
+
+
+// for(int i=0;i<str.length();i++)
+// {
+//     char ch=str.charAt(i);
+
+//     if (frequency[ch] != 0) {
+
+//                 System.out.println(ch + " = " + frequency[ch]);
+
+//                 frequency[ch] = 0;
+//             }
+//         }
+
+
 }
 
-    
-   
+    }
 
 
 
-
-
-    
-    
+ 
